@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure World</title>
+    <style>
+        /* Basisstijl en lettertype */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+
+        /* Navigatiebalk */
+        nav {
+            background-color: #1a5f7a;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://unsplash.com') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 48px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Algemene secties */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #1a5f7a;
+            border-bottom: 2px solid #f4f7f6;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        /* Review kaarten */
+        .review-card {
+            background-color: #fafafa;
+            border-left: 5px solid #57c5b6;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .review-author {
+            font-weight: bold;
+            color: #159895;
+            display: flex;
+            justify-content: space-between;
+        }
+        .stars {
+            color: #ffcc00;
+            font-size: 18px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1a5f7a;
+            color: white;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigatie -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#kaartjes">Kaartjes</a>
+        <a href="#info">Info</a>
+        <a href="#attracties">Kaart / Attracties</a>
+        <a href="#reviews">Reviews</a>
+    </nav>
+
+    <!-- Welkom Header -->
+    <header id="home">
+        <h1>Adventure World</h1>
+        <p>Hallo, welkom bij Adventure World!</p>
+    </header>
+
+    <div class="container">
+
+        <!-- Kaartjes Sectie -->
+        <section id="kaartjes">
+            <h2>🎟️ Kaartjes</h2>
+            <p>Koop hier online je tickets voor een onvergetelijk avontuur.</p>
+        </section>
+
+        <!-- Info Sectie -->
+        <section id="info">
+            <h2>ℹ️ Info</h2>
+            <p>Ontdek onze openingstijden, bereikbaarheid en parkregels.</p>
+        </section>
+
+        <!-- Kaart/Attractie Sectie -->
+        <section id="attracties">
+            <h2>🗺️ Kaart &amp; Attracties</h2>
+            <p>Bekijk de plattegrond en ontdek al onze spectaculaire attracties.</p>
+        </section>
+
+        <!-- Reviews Sectie -->
+        <section id="reviews">
+            <h2>⭐ Reviews</h2>
+            
+            <!-- Review 1 -->
+            <div class="review-card">
+                <div class="review-author">
+                    <span>Andrea</span>
+                    <span class="stars">⭐⭐⭐⭐⭐</span>
+                </div>
+                <p>Dit is een geweldig park zeker een aanrader, zeker als je in Amsterdam woont.</p>
+            </div>
+
+            <!-- Review 2 -->
+            <div class="review-card">
+                <div class="review-author">
+                    <span>Rick Balle Tick</span>
+                    <span class="stars">⭐⭐⭐½★</span>
+                </div>
+                <p>Ik woon niet in Amsterdam dus het is voor mij een 3,5 ster, maar het is echt een super leuk park!</p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Adventure World. Alle rechten voorbehouden.</p>
+    </footer>
+
+</body>
+</html>
